@@ -6,7 +6,7 @@ enum class Result {
     AttributeValid = 0,
 };
 
-Result getWorst(const Result &first, const Result &second) {
+inline Result getWorst(const Result &first, const Result &second) {
     if (first < second) {
         return first;
     } else {
